@@ -229,9 +229,45 @@ class PopUp extends StatelessWidget {
             ),
           ),
           new Container(
+            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: new Text(
+              'Posted by: ',
+              style: new TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          new Container(
+            padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: new Image.asset('assets/AndyWick.png',
+                width: 180.0, height: 70.0),
+          ),
+          new Container(
             padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
             child: new Text(
               'Create care packages of snacks and bottled water to hand out to homeless people you may encounter while driving.',
+              style: new TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+          new Container(
+            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+            child: new Text(
+              'Date: Every Sunday at 12-1pm',
+              style: new TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+          new Container(
+            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+            child: new Text(
+              'Place: Marshall Park, Riverside, CA',
               style: new TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
