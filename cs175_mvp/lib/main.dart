@@ -145,7 +145,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Postings()),
+                      MaterialPageRoute(builder: (context) => Profile()),
                     );
                   },
                 ),
@@ -424,6 +424,138 @@ class SignUp extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class Profile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: IconButton(icon: Icon(Icons.arrow_back_ios)),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          new Container(
+            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            child: new Text(
+              'My Profile',
+              style: new TextStyle(
+                fontSize: 30.0,
+                color: Colors.green,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          new Container(
+            padding: EdgeInsets.fromLTRB(40, 0, 40, 0),
+            child: new Image.asset('assets/dylan.png',
+                width: 380.0, height: 170.0),
+          ),
+          new Container(
+            padding: EdgeInsets.fromLTRB(50, 10, 50, 10),
+            child: new Text(
+              '5 more hours to your next Master Volunteer Certificate',
+              style: new TextStyle(
+                fontSize: 20.0,
+                color: Colors.green,
+                fontWeight:  FontWeight.bold,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+          ),
+          RaisedButton(
+            child: Text(
+              '           Volunteer Opportunities                ',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.0,
+              ),
+            ),
+            color: Colors.green,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(22.0))),
+            padding: EdgeInsets.all(10),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Postings()),
+              );
+            },
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+          ),
+          RaisedButton(
+            child: Text(
+              '                     My Sign Ups                                     ',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.0,
+              ),
+            ),
+            color: Colors.green,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(22.0))),
+            padding: EdgeInsets.all(10),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Postings()),
+              );
+            },
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+          ),
+          RaisedButton(
+            child: Text(
+              '                     My Postings                          ',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.0,
+              ),
+            ),
+            color: Colors.green,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(22.0))),
+            padding: EdgeInsets.all(10),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Postings()),
+              );
+            },
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+          ),
+          RaisedButton(
+            child: Text(
+              '                   My Certificates                     ',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.0,
+              ),
+            ),
+            color: Colors.green,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(22.0))),
+            padding: EdgeInsets.all(10),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Postings()),
+              );
+            },
+          ),
+        ],
       ),
     );
   }
