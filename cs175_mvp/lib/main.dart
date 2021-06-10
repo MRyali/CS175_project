@@ -244,7 +244,12 @@ class PopUp extends StatelessWidget {
             child: ElevatedButton.icon(
               icon: Text('Sign up'),
               label: Icon(Icons.arrow_forward, size: 16),
-              onPressed: () => {},
+              onPressed: () => {
+
+              },
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+              ),
             ),
           ),
         ],
